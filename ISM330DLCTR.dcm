@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ISM330DLCTR
+D STMicroelectronics iNEMO inertial module: 3D accelerometer and 3D gyroscope
+K
+F https://componentsearchengine.com/Datasheets/1/ISM330DLCTR.pdf
+$ENDCMP
+#
+#End Doc Library

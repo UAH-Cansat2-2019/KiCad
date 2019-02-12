@@ -1,0 +1,33 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555D
+D NE555DG4, Timer, 4.5 To 16V, 8-Pin SOIC-8
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP ISM330DLCTR
+D STMicroelectronics iNEMO inertial module: 3D accelerometer and 3D gyroscope
+K
+F https://componentsearchengine.com/Datasheets/1/ISM330DLCTR.pdf
+$ENDCMP
+#
+$CMP TPS3710QDSERQ1
+D Automotive Wide-VIN (18V) Voltage Detector
+K
+F http://www.ti.com/lit/gpn/tps3710-q1
+$ENDCMP
+#
+$CMP AB0815-T3
+D AB08X5 Real-Time Clock Family
+K
+F https://componentsearchengine.com/Datasheets/1/AB0815-T3.pdf
+$ENDCMP
+#
+$CMP BNO055
+D IMUs - Inertial Measurement Units Absolute Orientation 9-Axis Sensor
+K
+F https://componentsearchengine.com/Datasheets/1/BNO055.pdf
+$ENDCMP
+#
+#End Doc Library

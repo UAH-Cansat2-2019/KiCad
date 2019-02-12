@@ -1,0 +1,28 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 2N7002
+D 60V Vds, 0.115A Id, N-channel MOSFET, SOT-23
+K N-Channel Switching MOSFET
+F https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf
+$ENDCMP
+#
+$CMP 3.3vREG
+D TDKLambda 3.3V Regulator, 1.5 Watt output, 0.8 Amp output
+$ENDCMP
+#
+$CMP BNO055
+D IMUs - Inertial Measurement Units Absolute Orientation 9-Axis Sensor
+F https://componentsearchengine.com/Datasheets/1/BNO055.pdf
+$ENDCMP
+#
+$CMP BSS138
+D 50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET Logic Level
+F http://www.fairchildsemi.com/ds/BS/BSS138.pdf
+$ENDCMP
+#
+$CMP E-RPM
+D Temp connector to OSRAM 
+$ENDCMP
+#
+#End Doc Library

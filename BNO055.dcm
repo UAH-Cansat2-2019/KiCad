@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BNO055
+D IMUs - Inertial Measurement Units Absolute Orientation 9-Axis Sensor
+K
+F https://componentsearchengine.com/Datasheets/1/BNO055.pdf
+$ENDCMP
+#
+#End Doc Library
