@@ -1,17 +1,9 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP 3.3vREG
-D Cosle 3.3V Regulator, 3.96 Watt output, 1.2 Amp output
-$ENDCMP
-#
 $CMP ATXMEGA128A4U-AU
 D MCU,AVRXMEGA,32MHz,128K+8K Flash,TQFP44 Atmel ATXMEGA128A4U-AU, 16 bit, 8 bit AVR Microcontroller, 32MHz, 2 kB, 132 kB Flash, 44-Pin TQFP
+K
 F http://www.mouser.com/datasheet/2/268/Atmel-8387-8-and16-bit-AVR-Microcontroller-XMEGA-A-1315807.pdf
-$ENDCMP
-#
-$CMP BNO055
-D IMUs - Inertial Measurement Units Absolute Orientation 9-Axis Sensor
-F https://componentsearchengine.com/Datasheets/1/BNO055.pdf
 $ENDCMP
 #
 #End Doc Library
