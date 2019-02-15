@@ -125,6 +125,23 @@ P 5 0 1 6 200 500 1500 500 1500 -800 200 -800 200 500 N
 ENDDRAW
 ENDDEF
 #
+# Capacitor
+#
+DEF Capacitor CAP 0 40 Y Y 1 F N
+F0 "CAP" 15 270 60 H V C CNN
+F1 "Capacitor" -5 -335 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+P 2 0 1 15 -55 -35 55 -35 N
+P 2 0 1 15 -55 40 55 40 N
+P 2 0 1 15 0 -45 0 -125 N
+P 2 0 1 15 0 40 0 125 N
+X + 1 0 120 8 R 20 50 1 1 I
+X - 2 0 -125 8 L 20 50 1 1 I
+ENDDRAW
+ENDDEF
+#
 # Device:Battery
 #
 DEF Device:Battery BT 0 0 N N 1 F N

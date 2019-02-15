@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 6300T15
+D CBI SMT 1POS R. Angle 2/2.2V Red/GRN TR
+K
+F http://www.mouser.com/datasheet/2/423/6300T15-1064483.pdf
+$ENDCMP
+#
+#End Doc Library
