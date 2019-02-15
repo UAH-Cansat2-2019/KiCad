@@ -71,17 +71,6 @@ F 8 "BNO055" H 9700 3600 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L ERPM SNAP2?
-U 1 1 5C58FDF0
-P 5340 1215
-F 0 "SNAP2?" H 5360 775 60  0000 C CNN
-F 1 "ERPM" H 5220 1695 60  0000 L CNN
-F 2 "" H 5340 1215 60  0001 C CNN
-F 3 "" H 5340 1215 60  0001 C CNN
-	1    5340 1215
-	1    0    0    -1  
-$EndComp
-$Comp
 L MS5607 Bar-Pres-Sensor?
 U 1 1 5C59014C
 P 1450 995
@@ -112,17 +101,6 @@ F 1 "SERVO" H 10500 6165 60  0000 L CNN
 F 2 "" H 10630 5675 60  0001 C CNN
 F 3 "" H 10630 5675 60  0001 C CNN
 	1    10630 5675
-	1    0    0    -1  
-$EndComp
-$Comp
-L XBEE-PRO Radio?
-U 1 1 5C5903B1
-P 6410 5065
-F 0 "Radio?" H 7240 4135 60  0000 C CNN
-F 1 "XBEE-PRO" H 6620 6225 60  0000 L BNN
-F 2 "" H 6410 5065 60  0001 C CNN
-F 3 "" H 6410 5065 60  0001 C CNN
-	1    6410 5065
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -158,7 +136,7 @@ F 3 "" H 6975 1310 60  0001 C CNN
 	1    7000 1350
 	1    0    0    -1  
 $EndComp
-Text GLabel 5040 1165 0    60   Input ~ 0
+Text GLabel 5860 2420 0    60   Input ~ 0
 3.3V_IN
 Text GLabel 3135 925  0    60   Input ~ 0
 ADC_Pin
@@ -166,9 +144,9 @@ Text GLabel 1775 895  2    60   Input ~ 0
 3.3V_IN
 Text GLabel 4315 3485 2    60   Input ~ 0
 3.3V_IN
-Text GLabel 2560 6670 2    60   Input ~ 0
+Text GLabel 2020 2100 2    60   Input ~ 0
 3.3V_IN
-Text GLabel 7155 4655 2    60   Input ~ 0
+Text GLabel 1575 5305 2    60   Input ~ 0
 3.3V_IN
 Text GLabel 7950 3800 0    60   Input ~ 0
 3.3V_IN
@@ -190,13 +168,13 @@ Text GLabel 9610 6100 0    60   UnSpc ~ 0
 GND
 Text GLabel 8295 3190 3    60   UnSpc ~ 0
 GND
-Text GLabel 5615 4665 0    60   UnSpc ~ 0
+Text GLabel 1840 6620 2    60   UnSpc ~ 0
 GND
-Text GLabel 2565 6315 2    60   UnSpc ~ 0
+Text GLabel 2025 1745 2    60   UnSpc ~ 0
 GND
 Text GLabel 10920 5400 2    60   UnSpc ~ 0
 GND
-Text GLabel 5095 1465 0    60   UnSpc ~ 0
+Text GLabel 5800 2620 0    60   UnSpc ~ 0
 GND
 Text GLabel 4355 3745 0    60   UnSpc ~ 0
 GND
@@ -228,12 +206,12 @@ Wire Wire Line
 $Comp
 L Ublox GPS?
 U 1 1 5C5E6F41
-P 1630 6550
-F 0 "GPS?" H 1635 6540 60  0000 C CNN
-F 1 "Ublox" H 1615 6880 60  0000 C CNN
-F 2 "" H 1635 6540 60  0001 C CNN
-F 3 "" H 1635 6540 60  0001 C CNN
-	1    1630 6550
+P 1090 1980
+F 0 "GPS?" H 1095 1970 60  0000 C CNN
+F 1 "Ublox" H 1075 2310 60  0000 C CNN
+F 2 "" H 1095 1970 60  0001 C CNN
+F 3 "" H 1095 1970 60  0001 C CNN
+	1    1090 1980
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -263,95 +241,113 @@ Wire Wire Line
 Wire Wire Line
 	3720 1035 4125 1035
 Wire Wire Line
-	5315 1155 5040 1165
-Wire Wire Line
 	10880 5675 10920 5400
 Wire Wire Line
 	10700 5675 10455 5400
-Connection ~ 2565 6315
-Connection ~ 2560 6670
+Connection ~ 2025 1745
+Connection ~ 2020 2100
 Wire Wire Line
 	1520 965  1775 965 
 Wire Wire Line
 	1775 965  1775 895 
 Wire Wire Line
-	5315 1240 5340 1240
+	910  2050 950  2050
 Wire Wire Line
-	5340 1240 5340 1465
+	950  2050 995  2050
 Wire Wire Line
-	5340 1465 5095 1465
+	950  1560 950  1740
 Wire Wire Line
-	1450 6620 1535 6620
+	950  1740 950  1780
 Wire Wire Line
-	1490 6130 1490 6620
+	950  1780 950  1900
 Wire Wire Line
-	1490 6130 2155 6130
+	950  1900 950  1940
 Wire Wire Line
-	2155 6130 2155 6315
+	950  1940 950  2015
 Wire Wire Line
-	2155 6315 2565 6315
+	950  2015 950  2050
 Wire Wire Line
-	1450 6585 1490 6585
-Connection ~ 1490 6585
+	950  1560 1245 1560
 Wire Wire Line
-	1450 6510 1490 6510
-Connection ~ 1490 6510
+	1245 1560 1615 1560
 Wire Wire Line
-	1450 6470 1490 6470
-Connection ~ 1490 6470
+	1615 1560 1615 1745
 Wire Wire Line
-	1450 6350 1490 6350
-Connection ~ 1490 6350
+	1615 1745 2025 1745
 Wire Wire Line
-	1450 6310 1490 6310
-Connection ~ 1490 6310
+	910  2015 950  2015
+Connection ~ 950  2015
 Wire Wire Line
-	1785 6430 1810 6430
+	910  1940 950  1940
+Connection ~ 950  1940
 Wire Wire Line
-	1785 6130 1785 6670
-Connection ~ 1785 6130
+	910  1900 950  1900
+Connection ~ 950  1900
 Wire Wire Line
-	1810 6390 1785 6390
-Connection ~ 1785 6390
+	910  1780 950  1780
+Connection ~ 950  1780
 Wire Wire Line
-	1810 6350 1785 6350
-Connection ~ 1785 6350
+	910  1740 950  1740
+Connection ~ 950  1740
 Wire Wire Line
-	1810 6310 1785 6310
-Connection ~ 1785 6310
+	1245 1860 1270 1860
 Wire Wire Line
-	1785 6670 1810 6670
-Connection ~ 1785 6430
+	1245 1560 1245 1740
 Wire Wire Line
-	1810 6630 1785 6630
-Connection ~ 1785 6630
+	1245 1740 1245 1780
 Wire Wire Line
-	1810 6470 1745 6470
+	1245 1780 1245 1820
 Wire Wire Line
-	1745 6470 1745 6850
+	1245 1820 1245 1860
 Wire Wire Line
-	1745 6850 2560 6850
+	1245 1860 1245 2060
 Wire Wire Line
-	2560 6850 2560 6670
+	1245 2060 1245 2100
+Connection ~ 1245 1560
 Wire Wire Line
-	1810 6790 1745 6790
-Connection ~ 1745 6790
+	1270 1820 1245 1820
+Connection ~ 1245 1820
 Wire Wire Line
-	1535 6620 1535 6810
-Connection ~ 1490 6620
+	1270 1780 1245 1780
+Connection ~ 1245 1780
 Wire Wire Line
-	1715 6810 1715 6760
+	1270 1740 1245 1740
+Connection ~ 1245 1740
 Wire Wire Line
-	1715 6760 1535 6760
-Connection ~ 1535 6760
+	1245 2100 1270 2100
+Connection ~ 1245 1860
 Wire Wire Line
-	6720 4655 7160 4655
+	1270 2060 1245 2060
+Connection ~ 1245 2060
 Wire Wire Line
-	6020 4655 5615 4655
+	1270 1900 1205 1900
 Wire Wire Line
-	5615 4655 5615 4665
+	1205 1900 1205 2220
 Wire Wire Line
-	3650 3485 4315 3485
+	1205 2220 1205 2280
+Wire Wire Line
+	1205 2280 2020 2280
+Wire Wire Line
+	2020 2280 2020 2100
+Wire Wire Line
+	1270 2220 1205 2220
+Connection ~ 1205 2220
+Wire Wire Line
+	995  2050 995  2190
+Wire Wire Line
+	995  2190 995  2240
+Connection ~ 950  2050
+Wire Wire Line
+	1175 2240 1175 2190
+Wire Wire Line
+	1175 2190 995  2190
+Connection ~ 995  2190
+Wire Wire Line
+	1580 5505 1575 5305
+Wire Wire Line
+	3650 3485 4025 3485
+Wire Wire Line
+	4025 3485 4315 3485
 Wire Wire Line
 	8950 3000 8950 2925
 Wire Wire Line
@@ -381,13 +377,17 @@ F 8 "ATXMEGA128A4U-AU" H 3500 3385 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4355 5200 4355 3585
+	4355 5200 4355 3745
+Wire Wire Line
+	4355 3745 4355 3585
 Wire Wire Line
 	4355 3585 3650 3585
 Wire Wire Line
 	2950 4985 2950 5200
 Wire Wire Line
-	1660 5200 4355 5200
+	1660 5200 2950 5200
+Wire Wire Line
+	2950 5200 4355 5200
 Wire Wire Line
 	2050 3985 1660 3985
 Wire Wire Line
@@ -420,4 +420,54 @@ Wire Wire Line
 	6470 1655 6240 1655
 Wire Wire Line
 	6240 1655 6240 1660
+$Comp
+L XBP9B-XCWT-001 IC?
+U 1 1 5C6605C9
+P 4440 5765
+F 0 "IC?" H 4410 6080 50  0000 L CNN
+F 1 "XBP9B-XCWT-001" H 4070 5575 50  0000 L CNN
+F 2 "XBP9BXCWT001" H 4180 4210 50  0001 L CNN
+F 3 "http://www.mouser.com/datasheet/2/111/ds_xbeeproxsc-794439.pdf" H 3380 4310 50  0001 L CNN
+F 4 "RF Modules Xbee-PRO XSC S3B 900MHz, 250mW Wire" H 3420 4390 50  0001 L CNN "Description"
+F 5 "2.79" H 7535 5855 50  0001 L CNN "Height"
+F 6 "888-XBP9B-XCWT-001" H 3995 4500 50  0001 L CNN "Mouser Part Number"
+F 7 "Digi International" H 4205 4135 50  0001 L CNN "Manufacturer_Name"
+F 8 "XBP9B-XCWT-001" H 4180 4045 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4440 5765
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1580 6405 1580 6620
+Wire Wire Line
+	1580 6620 1840 6620
+$Comp
+L SFH_7776 IC?
+U 1 1 5C66198F
+P 6730 2460
+F 0 "IC?" H 6745 2545 50  0000 L CNN
+F 1 "SFH_7776" H 6615 2345 50  0000 L CNN
+F 2 "SFH7776" H 6605 1870 50  0001 L CNN
+F 3 "https://www.arrow.com/en/products/sfh7776/osram-opto-semiconductors" H 5775 1710 50  0001 L CNN
+F 4 "SFH 7776 Osram Opto Ambient Light and Proximity Sensor Surface Mount 8-Pin Miniature" H 5765 1620 50  0001 L CNN "Description"
+F 5 "1.45" H 7245 2295 50  0001 L CNN "Height"
+F 6 "720-SFH7776" H 6515 1795 50  0001 L CNN "Mouser Part Number"
+F 7 "OSRAM Opto Semiconductors" H 6195 1530 50  0001 L CNN "Manufacturer_Name"
+F 8 "SFH 7776" H 6585 1445 50  0001 L CNN "Manufacturer_Part_Number"
+	1    6730 2460
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6195 2425 5860 2425
+Wire Wire Line
+	5860 2425 5860 2420
+Wire Wire Line
+	6195 2625 5800 2625
+Wire Wire Line
+	5800 2625 5800 2620
+Wire Wire Line
+	7395 2425 7395 2525
+Wire Wire Line
+	7395 2525 7395 2525
+Wire Wire Line
+	7395 2425 7395 2425
 $EndSCHEMATC

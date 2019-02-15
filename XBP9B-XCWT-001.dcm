@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP XBP9B-XCWT-001
+D RF Modules Xbee-PRO XSC S3B 900MHz, 250mW Wire
+K
+F http://www.mouser.com/datasheet/2/111/ds_xbeeproxsc-794439.pdf
+$ENDCMP
+#
+#End Doc Library

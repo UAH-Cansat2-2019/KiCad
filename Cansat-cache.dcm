@@ -14,4 +14,14 @@ D IMUs - Inertial Measurement Units Absolute Orientation 9-Axis Sensor
 F https://componentsearchengine.com/Datasheets/1/BNO055.pdf
 $ENDCMP
 #
+$CMP SFH_7776
+D SFH 7776 Osram Opto Ambient Light and Proximity Sensor Surface Mount 8-Pin Miniature
+F https://www.arrow.com/en/products/sfh7776/osram-opto-semiconductors
+$ENDCMP
+#
+$CMP XBP9B-XCWT-001
+D RF Modules Xbee-PRO XSC S3B 900MHz, 250mW Wire
+F http://www.mouser.com/datasheet/2/111/ds_xbeeproxsc-794439.pdf
+$ENDCMP
+#
 #End Doc Library
