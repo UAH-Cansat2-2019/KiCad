@@ -57,17 +57,17 @@ $EndComp
 $Comp
 L BNO055 IC?
 U 1 1 5C58FCE6
-P 8150 3700
-F 0 "IC?" H 9700 4400 50  0000 L CNN
-F 1 "BNO055" H 9700 4300 50  0000 L CNN
-F 2 "BNO055" H 9700 4200 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/BNO055.pdf" H 9700 4100 50  0001 L CNN
-F 4 "IMUs - Inertial Measurement Units Absolute Orientation 9-Axis Sensor" H 9700 4000 50  0001 L CNN "Description"
-F 5 "1" H 9700 3900 50  0001 L CNN "Height"
-F 6 "262-BNO055" H 9700 3800 50  0001 L CNN "Mouser Part Number"
-F 7 "Bosch Sensortec" H 9700 3700 50  0001 L CNN "Manufacturer_Name"
-F 8 "BNO055" H 9700 3600 50  0001 L CNN "Manufacturer_Part_Number"
-	1    8150 3700
+P 6790 3640
+F 0 "IC?" H 8340 4340 50  0000 L CNN
+F 1 "BNO055" H 8340 4240 50  0000 L CNN
+F 2 "BNO055" H 8340 4140 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/BNO055.pdf" H 8340 4040 50  0001 L CNN
+F 4 "IMUs - Inertial Measurement Units Absolute Orientation 9-Axis Sensor" H 8340 3940 50  0001 L CNN "Description"
+F 5 "1" H 8340 3840 50  0001 L CNN "Height"
+F 6 "262-BNO055" H 8340 3740 50  0001 L CNN "Mouser Part Number"
+F 7 "Bosch Sensortec" H 8340 3640 50  0001 L CNN "Manufacturer_Name"
+F 8 "BNO055" H 8340 3540 50  0001 L CNN "Manufacturer_Part_Number"
+	1    6790 3640
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -136,7 +136,7 @@ F 3 "" H 6975 1310 60  0001 C CNN
 	1    7000 1350
 	1    0    0    -1  
 $EndComp
-Text GLabel 5860 2420 0    60   Input ~ 0
+Text GLabel 3020 6765 0    60   Output ~ 0
 3.3V_IN
 Text GLabel 3135 925  0    60   Input ~ 0
 ADC_Pin
@@ -148,7 +148,7 @@ Text GLabel 2020 2100 2    60   Input ~ 0
 3.3V_IN
 Text GLabel 1575 5305 2    60   Input ~ 0
 3.3V_IN
-Text GLabel 7950 3800 0    60   Input ~ 0
+Text GLabel 6590 3740 0    60   Input ~ 0
 3.3V_IN
 Text GLabel 10200 1760 0    60   Input ~ 0
 MCU_MOSFET?Pin
@@ -166,7 +166,7 @@ Text GLabel 10200 1240 0    60   UnSpc ~ 0
 GND
 Text GLabel 9610 6100 0    60   UnSpc ~ 0
 GND
-Text GLabel 8295 3190 3    60   UnSpc ~ 0
+Text GLabel 6935 3130 3    60   UnSpc ~ 0
 GND
 Text GLabel 1840 6620 2    60   UnSpc ~ 0
 GND
@@ -174,7 +174,7 @@ Text GLabel 2025 1745 2    60   UnSpc ~ 0
 GND
 Text GLabel 10920 5400 2    60   UnSpc ~ 0
 GND
-Text GLabel 5800 2620 0    60   UnSpc ~ 0
+Text GLabel 2825 7020 0    60   UnSpc ~ 0
 GND
 Text GLabel 4355 3745 0    60   UnSpc ~ 0
 GND
@@ -349,17 +349,17 @@ Wire Wire Line
 Wire Wire Line
 	4025 3485 4315 3485
 Wire Wire Line
-	8950 3000 8950 2925
+	7590 2940 7590 2865
 Wire Wire Line
-	8950 2925 8295 2925
+	7590 2865 6935 2865
 Wire Wire Line
-	8295 2925 8295 3190
+	6935 2865 6935 3130
 Wire Wire Line
-	8150 3700 8150 3190
+	6790 3640 6790 3130
 Wire Wire Line
-	8150 3190 8295 3190
+	6790 3130 6935 3130
 Wire Wire Line
-	8150 3800 7950 3800
+	6790 3740 6590 3740
 $Comp
 L ATXMEGA128A4U-AU IC?
 U 1 1 5C6434EB
@@ -443,31 +443,186 @@ Wire Wire Line
 $Comp
 L SFH_7776 IC?
 U 1 1 5C66198F
-P 6730 2460
-F 0 "IC?" H 6745 2545 50  0000 L CNN
-F 1 "SFH_7776" H 6615 2345 50  0000 L CNN
-F 2 "SFH7776" H 6605 1870 50  0001 L CNN
-F 3 "https://www.arrow.com/en/products/sfh7776/osram-opto-semiconductors" H 5775 1710 50  0001 L CNN
-F 4 "SFH 7776 Osram Opto Ambient Light and Proximity Sensor Surface Mount 8-Pin Miniature" H 5765 1620 50  0001 L CNN "Description"
-F 5 "1.45" H 7245 2295 50  0001 L CNN "Height"
-F 6 "720-SFH7776" H 6515 1795 50  0001 L CNN "Mouser Part Number"
-F 7 "OSRAM Opto Semiconductors" H 6195 1530 50  0001 L CNN "Manufacturer_Name"
-F 8 "SFH 7776" H 6585 1445 50  0001 L CNN "Manufacturer_Part_Number"
-	1    6730 2460
+P 4215 6845
+F 0 "IC?" H 4230 6930 50  0000 L CNN
+F 1 "SFH_7776" H 4100 6730 50  0000 L CNN
+F 2 "SFH7776" H 4090 6255 50  0001 L CNN
+F 3 "https://www.arrow.com/en/products/sfh7776/osram-opto-semiconductors" H 3260 6095 50  0001 L CNN
+F 4 "SFH 7776 Osram Opto Ambient Light and Proximity Sensor Surface Mount 8-Pin Miniature" H 3250 6005 50  0001 L CNN "Description"
+F 5 "1.45" H 4730 6680 50  0001 L CNN "Height"
+F 6 "720-SFH7776" H 4000 6180 50  0001 L CNN "Mouser Part Number"
+F 7 "OSRAM Opto Semiconductors" H 3680 5915 50  0001 L CNN "Manufacturer_Name"
+F 8 "SFH 7776" H 4070 5830 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4215 6845
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6195 2425 5860 2425
+	3510 6775 3680 6775
 Wire Wire Line
-	5860 2425 5860 2420
+	3510 6775 3340 6770
 Wire Wire Line
-	6195 2625 5800 2625
+	3340 6770 3330 6770
 Wire Wire Line
-	5800 2625 5800 2620
+	3330 6770 3020 6765
 Wire Wire Line
-	7395 2425 7395 2525
+	3330 7020 3515 7020
 Wire Wire Line
-	7395 2525 7395 2525
+	3515 7020 3535 7020
 Wire Wire Line
-	7395 2425 7395 2425
+	3340 7010 3330 7020
+Wire Wire Line
+	3115 7010 3280 7010
+Wire Wire Line
+	3280 7010 3340 7010
+Wire Wire Line
+	3115 7010 2825 7020
+Wire Wire Line
+	4880 6810 4880 6910
+$Comp
+L Capacitor CAP?
+U 1 1 5C66264C
+P 3330 6895
+F 0 "CAP?" H 3345 7165 12  0000 C CNN
+F 1 "Capacitor" H 3425 6910 60  0000 C CNN
+F 2 "" H 3330 6895 60  0001 C CNN
+F 3 "" H 3330 6895 60  0001 C CNN
+	1    3330 6895
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitor CAP?
+U 1 1 5C6639D6
+P 3515 6895
+F 0 "CAP?" H 3530 7165 60  0000 C CNN
+F 1 "Capacitor" H 3425 6910 60  0000 C CNN
+F 2 "" H 3515 6895 60  0001 C CNN
+F 3 "" H 3515 6895 60  0001 C CNN
+	1    3515 6895
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistor RES?
+U 1 1 5C663E1F
+P 3585 7480
+F 0 "RES?" V 3595 7670 60  0000 C CNN
+F 1 "Resistor" V 3725 7675 60  0000 C CNN
+F 2 "" H 3585 7480 60  0001 C CNN
+F 3 "" H 3585 7480 60  0001 C CNN
+	1    3585 7480
+	0    1    1    0   
+$EndComp
+$Comp
+L Resistor RES?
+U 1 1 5C663F58
+P 4885 7465
+F 0 "RES?" V 4845 7645 60  0000 C CNN
+F 1 "Resistor" V 4720 7665 60  0000 C CNN
+F 2 "" H 4885 7465 60  0001 C CNN
+F 3 "" H 4885 7465 60  0001 C CNN
+	1    4885 7465
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3530 7620 0    60   Output ~ 0
+Vio
+Wire Wire Line
+	3585 7560 4885 7560
+Wire Wire Line
+	4885 7560 4885 7545
+Wire Wire Line
+	4885 7385 4885 7110
+Wire Wire Line
+	4885 7110 4880 7110
+Wire Wire Line
+	3575 7295 3585 7400
+Wire Wire Line
+	3580 7175 3645 7175
+Wire Wire Line
+	3645 7175 3645 6910
+Wire Wire Line
+	3645 6910 3680 6910
+Wire Wire Line
+	3530 7620 3585 7620
+Wire Wire Line
+	3585 7620 3585 7560
+Text GLabel 5140 6910 1    60   Output ~ 0
+Vint,up
+Wire Wire Line
+	3680 7110 3520 7110
+Wire Wire Line
+	3520 7110 3520 7245
+Wire Wire Line
+	3520 7245 3120 7245
+Wire Wire Line
+	3120 7245 2985 7245
+Wire Wire Line
+	2985 7245 2985 7225
+Wire Wire Line
+	2985 7225 3020 6765
+$Comp
+L Capacitor CAP?
+U 1 1 5C6673BC
+P 3120 7135
+F 0 "CAP?" H 3135 7405 60  0000 C CNN
+F 1 "Capacitor" H 3205 7135 60  0000 C CNN
+F 2 "" H 3120 7135 60  0001 C CNN
+F 3 "" H 3120 7135 60  0001 C CNN
+	1    3120 7135
+	1    0    0    1   
+$EndComp
+$Comp
+L Capacitor CAP?
+U 1 1 5C667441
+P 3280 7135
+F 0 "CAP?" H 3135 7405 60  0000 C CNN
+F 1 "Capacitor" H 3205 7135 60  0000 C CNN
+F 2 "" H 3280 7135 60  0001 C CNN
+F 3 "" H 3280 7135 60  0001 C CNN
+	1    3280 7135
+	1    0    0    1   
+$EndComp
+Text GLabel 5035 7105 3    60   Output ~ 0
+Vint
+$Comp
+L Resistor RES?
+U 1 1 5C667FB7
+P 5140 6990
+F 0 "RES?" V 5165 6750 60  0000 C CNN
+F 1 "Resistor" V 5065 6745 60  0000 C CNN
+F 2 "" H 5140 6990 60  0001 C CNN
+F 3 "" H 5140 6990 60  0001 C CNN
+	1    5140 6990
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4880 7010 5035 7010
+Wire Wire Line
+	5035 7010 5035 7070
+Wire Wire Line
+	5035 7070 5035 7105
+Wire Wire Line
+	5140 7070 5035 7070
+Connection ~ 5035 7070
+Wire Wire Line
+	3680 6775 3680 6810
+Connection ~ 3330 7020
+Connection ~ 3280 7010
+Wire Wire Line
+	3535 7020 3680 7010
+Connection ~ 3515 7020
+Wire Wire Line
+	3330 6770 3330 6775
+Connection ~ 3330 6770
+Connection ~ 3510 6775
+Connection ~ 3115 7010
+Wire Wire Line
+	3120 7255 3120 7245
+Connection ~ 3120 7245
+Wire Wire Line
+	3120 7245 3280 7255
+Text GLabel 4885 7270 0    60   BiDi ~ 0
+I2C_serialdata
+Text GLabel 3575 7295 2    60   Input ~ 0
+I2C_clk
+Wire Wire Line
+	3580 7175 3575 7295
 $EndSCHEMATC
