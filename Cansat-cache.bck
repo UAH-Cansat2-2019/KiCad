@@ -1,5 +1,9 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP +3V
+K POWER, PWR
+$ENDCMP
+#
 $CMP 3.3vREG
 D Cosle 3.3V Regulator, 3.96 Watt output, 1.2 Amp output
 $ENDCMP
