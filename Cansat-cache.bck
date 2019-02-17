@@ -8,11 +8,6 @@ $CMP 3.3vREG
 D Cosle 3.3V Regulator, 3.96 Watt output, 1.2 Amp output
 $ENDCMP
 #
-$CMP 6300T15
-D CBI SMT 1POS R. Angle 2/2.2V Red/GRN TR
-F http://www.mouser.com/datasheet/2/423/6300T15-1064483.pdf
-$ENDCMP
-#
 $CMP ATXMEGA128A4U-AU
 D MCU,AVRXMEGA,32MHz,128K+8K Flash,TQFP44 Atmel ATXMEGA128A4U-AU, 16 bit, 8 bit AVR Microcontroller, 32MHz, 2 kB, 132 kB Flash, 44-Pin TQFP
 F http://www.mouser.com/datasheet/2/268/Atmel-8387-8-and16-bit-AVR-Microcontroller-XMEGA-A-1315807.pdf
