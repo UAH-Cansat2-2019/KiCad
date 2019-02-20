@@ -1,35 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
+EESchema Schematic File Version 4
 LIBS:Cansat-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -44,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:Battery surefire123A
+L Cansat-rescue:Device_Battery surefire123A
 U 1 1 5BFE0A8A
 P 9472 5894
 F 0 "surefire123A" H 9580 5940 50  0000 L CNN
@@ -55,7 +26,7 @@ F 3 "~" V 9472 5954 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BNO055 IC?
+L Cansat-rescue:BNO055 IC?
 U 1 1 5C58FCE6
 P 6790 3640
 F 0 "IC?" H 8340 4340 50  0000 L CNN
@@ -71,7 +42,7 @@ F 8 "BNO055" H 8340 3540 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L MS5607 Bar-Pres-Sensor?
+L Cansat-rescue:MS5607 Bar-Pres-Sensor?
 U 1 1 5C59014C
 P 2567 1643
 F 0 "Bar-Pres-Sensor?" H 2182 2094 60  0000 L BNN
@@ -82,7 +53,7 @@ F 3 "" H 2567 1643 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L NTC-LE203 Temp-R?
+L Cansat-rescue:NTC-LE203 Temp-R?
 U 1 1 5C5901BF
 P 8202 696
 F 0 "Temp-R?" H 8192 566 60  0000 C CNN
@@ -93,7 +64,7 @@ F 3 "" H 7972 826 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SERVO SNAP?
+L Cansat-rescue:SERVO SNAP?
 U 1 1 5C590266
 P 10219 5549
 F 0 "SNAP?" H 10261 5822 60  0000 C CNN
@@ -104,7 +75,7 @@ F 3 "" H 10219 5549 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SPKR105dB MAS803Q?
+L Cansat-rescue:SPKR105dB MAS803Q?
 U 1 1 5C591308
 P 10200 1500
 F 0 "MAS803Q?" H 9830 1460 98  0000 L BNN
@@ -115,7 +86,7 @@ F 3 "" H 10200 1500 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MAX8881_5V_REG 5VReg?
+L Cansat-rescue:MAX8881_5V_REG 5VReg?
 U 1 1 5C60EFCC
 P 8212 2087
 F 0 "5VReg?" H 8235 2254 60  0000 C CNN
@@ -126,7 +97,7 @@ F 3 "" H 8207 2447 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 3.3vREG CoSel_SUS1R5
+L Cansat-rescue:3.3vREG CoSel_SUS1R5
 U 1 1 5C60F046
 P 8170 1324
 F 0 "CoSel_SUS1R5" H 8174 907 60  0000 C CNN
@@ -145,7 +116,7 @@ Text GLabel 7962 2237 0    60   Output ~ 0
 Text GLabel 8725 1069 2    60   Output ~ 0
 3.3V_OUT
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5C62C44F
 P 9472 6194
 F 0 "#PWR?" H 9472 5944 50  0001 C CNN
@@ -158,7 +129,7 @@ $EndComp
 Wire Wire Line
 	9472 6094 9472 6194
 $Comp
-L Ublox GPS?
+L Cansat-rescue:Ublox GPS?
 U 1 1 5C5E6F41
 P 2655 3669
 F 0 "GPS?" H 1815 3528 60  0000 C CNN
@@ -189,7 +160,7 @@ Wire Wire Line
 Wire Wire Line
 	6790 3740 6591 3740
 $Comp
-L ATXMEGA128A4U-AU IC?
+L Cansat-rescue:ATXMEGA128A4U-AU IC?
 U 1 1 5C6434EB
 P 3662 3441
 F 0 "IC?" H 4467 3590 50  0000 L CNN
@@ -205,7 +176,7 @@ F 8 "ATXMEGA128A4U-AU" H 5112 3541 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L XBP9B-XCWT-001 IC?
+L Cansat-rescue:XBP9B-XCWT-001 IC?
 U 1 1 5C6605C9
 P 4040 6549
 F 0 "IC?" H 4010 6864 50  0000 L CNN
@@ -221,7 +192,7 @@ F 8 "XBP9B-XCWT-001" H 3780 4829 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L SFH_7776 OSRAM_IR
+L Cansat-rescue:SFH_7776 OSRAM_IR
 U 1 1 5C66198F
 P 5216 856
 F 0 "OSRAM_IR" H 5114 675 50  0000 L CNN
@@ -245,17 +216,17 @@ Wire Wire Line
 Wire Wire Line
 	4331 781  4021 776 
 Wire Wire Line
-	4331 1031 4536 1031
+	4331 1031 4516 1031
 Wire Wire Line
 	4341 1021 4331 1031
 Wire Wire Line
-	4116 1021 4341 1021
+	4116 1021 4281 1021
 Wire Wire Line
 	4116 1021 3827 1031
 Wire Wire Line
 	5881 821  5881 921 
 $Comp
-L Capacitor CAP?
+L Cansat-rescue:Capacitor CAP?
 U 1 1 5C66264C
 P 4331 906
 F 0 "CAP?" H 4346 1176 12  0000 C CNN
@@ -266,7 +237,7 @@ F 3 "" H 4331 906 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Capacitor CAP?
+L Cansat-rescue:Capacitor CAP?
 U 1 1 5C6639D6
 P 4516 906
 F 0 "CAP?" H 4531 1176 60  0000 C CNN
@@ -277,7 +248,7 @@ F 3 "" H 4516 906 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Resistor RES?
+L Cansat-rescue:Resistor RES?
 U 1 1 5C663E1F
 P 4586 1491
 F 0 "RES?" V 4596 1681 60  0000 C CNN
@@ -288,7 +259,7 @@ F 3 "" H 4586 1491 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Resistor RES?
+L Cansat-rescue:Resistor RES?
 U 1 1 5C663F58
 P 5886 1476
 F 0 "RES?" V 5846 1656 60  0000 C CNN
@@ -329,11 +300,9 @@ Wire Wire Line
 Wire Wire Line
 	4519 1256 4281 1266
 Wire Wire Line
-	4281 1266 4281 1266
-Wire Wire Line
 	3986 1256 3984 1254
 $Comp
-L Capacitor CAP?
+L Cansat-rescue:Capacitor CAP?
 U 1 1 5C6673BC
 P 4121 1146
 F 0 "CAP?" H 4136 1416 60  0000 C CNN
@@ -344,7 +313,7 @@ F 3 "" H 4121 1146 60  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Capacitor CAP?
+L Cansat-rescue:Capacitor CAP?
 U 1 1 5C667441
 P 4281 1146
 F 0 "CAP?" H 4136 1416 60  0000 C CNN
@@ -357,7 +326,7 @@ $EndComp
 Text GLabel 6036 1116 3    60   Output ~ 0
 Vint
 $Comp
-L Resistor RES?
+L Cansat-rescue:Resistor RES?
 U 1 1 5C667FB7
 P 6141 1001
 F 0 "RES?" V 6166 761 60  0000 C CNN
@@ -370,7 +339,7 @@ $EndComp
 Wire Wire Line
 	5881 1021 6036 1021
 Wire Wire Line
-	6036 1021 6036 1116
+	6036 1021 6036 1081
 Wire Wire Line
 	6141 1081 6036 1081
 Connection ~ 6036 1081
@@ -384,8 +353,6 @@ Connection ~ 4516 1031
 Wire Wire Line
 	4331 781  4331 786 
 Connection ~ 4331 781 
-Connection ~ 4511 786 
-Connection ~ 4116 1021
 Wire Wire Line
 	4121 1265 4121 1308
 Wire Wire Line
@@ -397,7 +364,7 @@ I2C_clk
 Wire Wire Line
 	4581 1186 4576 1306
 $Comp
-L OpenLog Breakout?
+L Cansat-rescue:OpenLog Breakout?
 U 1 1 5C6880DE
 P 10060 3435
 F 0 "Breakout?" H 10054 3619 60  0000 C CNN
@@ -407,12 +374,10 @@ F 3 "" H 10060 3435 60  0001 C CNN
 	1    10060 3435
 	1    0    0    -1  
 $EndComp
-Connection ~ 4281 1266
 Wire Wire Line
 	4121 1308 4282 1267
-Connection ~ 4121 1265
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5C68F5C8
 P 6790 3640
 F 0 "#PWR?" H 6790 3390 50  0001 C CNN
@@ -423,7 +388,7 @@ F 3 "" H 6790 3640 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5C68FB40
 P 8742 756
 F 0 "#PWR?" H 8742 506 50  0001 C CNN
@@ -434,7 +399,7 @@ F 3 "" H 8742 756 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5C690FCD
 P 8725 1634
 F 0 "#PWR?" H 8725 1384 50  0001 C CNN
@@ -445,7 +410,7 @@ F 3 "" H 8725 1634 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5C691493
 P 10200 1240
 F 0 "#PWR?" H 10200 990 50  0001 C CNN
@@ -456,7 +421,7 @@ F 3 "" H 10200 1240 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5C691B2F
 P 4562 5141
 F 0 "#PWR?" H 4562 4891 50  0001 C CNN
@@ -467,7 +432,7 @@ F 3 "" H 4562 5141 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5C692009
 P 3662 4141
 F 0 "#PWR?" H 3662 3891 50  0001 C CNN
@@ -478,7 +443,7 @@ F 3 "" H 3662 4141 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5C69232B
 P 4562 2541
 F 0 "#PWR?" H 4562 2291 50  0001 C CNN
@@ -489,7 +454,7 @@ F 3 "" H 4562 2541 50  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5C6938E9
 P 5262 3741
 F 0 "#PWR?" H 5262 3491 50  0001 C CNN
@@ -500,7 +465,7 @@ F 3 "" H 5262 3741 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5C694CA3
 P 7590 2940
 F 0 "#PWR?" H 7590 2690 50  0001 C CNN
@@ -511,7 +476,7 @@ F 3 "" H 7590 2940 50  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5C695169
 P 10253 3777
 F 0 "#PWR?" H 10253 3527 50  0001 C CNN
@@ -522,14 +487,11 @@ F 3 "" H 10253 3777 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10199 3777 10296 3777
-Wire Wire Line
 	10296 3777 10296 3775
 Wire Wire Line
 	10296 3775 10295 3775
-Connection ~ 10252 3777
 $Comp
-L +3.3V #PWR?
+L power:+3.3V #PWR?
 U 1 1 5C695753
 P 10111 3777
 F 0 "#PWR?" H 10111 3627 50  0001 C CNN
@@ -540,7 +502,7 @@ F 3 "" H 10111 3777 50  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L +5V #PWR?
+L power:+5V #PWR?
 U 1 1 5C695D33
 P 10248 5989
 F 0 "#PWR?" H 10248 5839 50  0001 C CNN
@@ -551,7 +513,7 @@ F 3 "" H 10248 5989 50  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5C695F4F
 P 10368 6326
 F 0 "#PWR?" H 10368 6076 50  0001 C CNN
@@ -562,7 +524,7 @@ F 3 "" H 10368 6326 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Battery ML681_3V
+L Cansat-rescue:Device_Battery ML681_3V
 U 1 1 5C696ACB
 P 8853 5928
 F 0 "ML681_3V" H 8953 6028 50  0000 L CNN
@@ -573,7 +535,7 @@ F 3 "" V 8853 5988 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5C696F68
 P 8853 6128
 F 0 "#PWR?" H 8853 5878 50  0001 C CNN
@@ -584,7 +546,7 @@ F 3 "" H 8853 6128 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5C697C09
 P 3827 1031
 F 0 "#PWR?" H 3827 781 50  0001 C CNN
@@ -595,7 +557,7 @@ F 3 "" H 3827 1031 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5C697FE3
 P 1180 7189
 F 0 "#PWR?" H 1180 6939 50  0001 C CNN
@@ -606,7 +568,7 @@ F 3 "" H 1180 7189 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR?
+L power:+3.3V #PWR?
 U 1 1 5C6985B9
 P 3662 4241
 F 0 "#PWR?" H 3662 4091 50  0001 C CNN
@@ -617,7 +579,7 @@ F 3 "" H 3662 4241 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L +3.3V #PWR?
+L power:+3.3V #PWR?
 U 1 1 5C698A3B
 P 4662 5141
 F 0 "#PWR?" H 4662 4991 50  0001 C CNN
@@ -628,7 +590,7 @@ F 3 "" H 4662 5141 50  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L +3.3V #PWR?
+L power:+3.3V #PWR?
 U 1 1 5C699109
 P 5262 3641
 F 0 "#PWR?" H 5262 3491 50  0001 C CNN
@@ -639,7 +601,7 @@ F 3 "" H 5262 3641 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L +3.3V #PWR?
+L power:+3.3V #PWR?
 U 1 1 5C699687
 P 4462 2541
 F 0 "#PWR?" H 4462 2391 50  0001 C CNN
@@ -650,7 +612,7 @@ F 3 "" H 4462 2541 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5C69A05C
 P 7912 2087
 F 0 "#PWR?" H 7912 1837 50  0001 C CNN
@@ -661,7 +623,7 @@ F 3 "" H 7912 2087 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L +6V #PWR?
+L power:+6V #PWR?
 U 1 1 5C69A70B
 P 7640 1079
 F 0 "#PWR?" H 7640 929 50  0001 C CNN
@@ -672,7 +634,7 @@ F 3 "" H 7640 1079 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L +6V #PWR?
+L power:+6V #PWR?
 U 1 1 5C69ABF6
 P 7982 2012
 F 0 "#PWR?" H 7982 1862 50  0001 C CNN
@@ -683,7 +645,7 @@ F 3 "" H 7982 2012 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L +3.3V #PWR?
+L power:+3.3V #PWR?
 U 1 1 5C69DFC4
 P 1175 6089
 F 0 "#PWR?" H 1175 5939 50  0001 C CNN
@@ -694,7 +656,7 @@ F 3 "" H 1175 6089 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR?
+L power:+3.3V #PWR?
 U 1 1 5C6A26E7
 P 4021 776
 F 0 "#PWR?" H 4021 626 50  0001 C CNN
@@ -705,7 +667,7 @@ F 3 "" H 4021 776 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L +3V #PWR?
+L Cansat-rescue:+3V #PWR?
 U 1 1 5C6A2C26
 P 3984 1254
 F 0 "#PWR?" H 3957 1140 50  0001 C CNN
@@ -716,7 +678,7 @@ F 3 "" H 3984 1254 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L +3.3V #PWR?
+L power:+3.3V #PWR?
 U 1 1 5C6A52CB
 P 6591 3740
 F 0 "#PWR?" H 6591 3590 50  0001 C CNN
@@ -727,7 +689,7 @@ F 3 "" H 6591 3740 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5C6AAE29
 P 7640 1629
 F 0 "#PWR?" H 7640 1379 50  0001 C CNN
@@ -738,7 +700,7 @@ F 3 "" H 7640 1629 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5C6A0F9E
 P 2368 2909
 F 0 "#PWR?" H 2368 2659 50  0001 C CNN
@@ -749,8 +711,7 @@ F 3 "" H 2368 2909 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1352 2909 2370 2909
-Connection ~ 2369 2909
+	1352 2909 1518 2909
 Wire Wire Line
 	2204 2907 2204 2909
 Connection ~ 2204 2909
@@ -758,25 +719,15 @@ Wire Wire Line
 	2026 2907 2026 2909
 Connection ~ 2026 2909
 Wire Wire Line
-	1851 2907 1851 2911
-Wire Wire Line
-	1851 2909 1851 2910
-Connection ~ 1851 2910
-Wire Wire Line
-	1694 2908 1694 2910
+	1694 2908 1694 2909
 Connection ~ 1694 2909
 Connection ~ 1518 2909
-Connection ~ 1352 2909
-Wire Wire Line
-	1372 5212 1707 5212
 Wire Wire Line
 	1707 5212 1883 5213
 Wire Wire Line
 	1883 5213 2069 5214
-Wire Wire Line
-	2069 5214 2391 5214
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5C6A2FF6
 P 2389 5216
 F 0 "#PWR?" H 2389 4966 50  0001 C CNN
@@ -786,15 +737,9 @@ F 3 "" H 2389 5216 50  0000 C CNN
 	1    2389 5216
 	0    -1   -1   0   
 $EndComp
-Connection ~ 1372 5212
-Connection ~ 1525 5212
 Connection ~ 1707 5212
-Connection ~ 1883 5213
-Connection ~ 2069 5214
-Connection ~ 2203 5214
-Connection ~ 2388 5213
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5C6A5131
 P 2103 1867
 F 0 "#PWR?" H 2103 1617 50  0001 C CNN
@@ -805,7 +750,7 @@ F 3 "" H 2103 1867 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L +3.3V #PWR?
+L power:+3.3V #PWR?
 U 1 1 5C6A5607
 P 2103 1418
 F 0 "#PWR?" H 2103 1268 50  0001 C CNN
@@ -816,7 +761,7 @@ F 3 "" H 2103 1418 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L VoltageDivider comp?
+L Cansat-rescue:VoltageDivider comp?
 U 1 1 5C6A61F8
 P 7688 5736
 F 0 "comp?" H 7705 5968 60  0000 C CNN
@@ -827,7 +772,7 @@ F 3 "" H 7688 5736 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5C6A6CCB
 P 7290 5814
 F 0 "#PWR?" H 7290 5564 50  0001 C CNN
@@ -838,7 +783,7 @@ F 3 "" H 7290 5814 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L +6V #PWR?
+L power:+6V #PWR?
 U 1 1 5C6A707B
 P 7293 5661
 F 0 "#PWR?" H 7293 5511 50  0001 C CNN
@@ -851,7 +796,7 @@ $EndComp
 Text GLabel 8093 5735 2    60   Input ~ 0
 ADC_Pin1
 $Comp
-L FAN_0 SNAP?
+L Cansat-rescue:FAN_0 SNAP?
 U 1 1 5C6A83DC
 P 10600 5686
 F 0 "SNAP?" H 10616 6096 60  0000 C CNN
@@ -862,7 +807,7 @@ F 3 "" H 10600 5686 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L FAN_1 SNAP?
+L Cansat-rescue:FAN_1 SNAP?
 U 1 1 5C6A887F
 P 10894 5554
 F 0 "SNAP?" H 11004 5824 60  0000 C CNN
@@ -873,7 +818,7 @@ F 3 "" H 10894 5554 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR?
+L power:+3.3V #PWR?
 U 1 1 5C6AA19C
 P 2632 4593
 F 0 "#PWR?" H 2632 4443 50  0001 C CNN
@@ -884,7 +829,7 @@ F 3 "" H 2632 4593 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L +3V #PWR?
+L Cansat-rescue:+3V #PWR?
 U 1 1 5C6AA412
 P 2631 4271
 F 0 "#PWR?" H 2604 4157 50  0001 C CNN
@@ -898,8 +843,6 @@ Wire Wire Line
 	2635 4423 2635 4593
 Wire Wire Line
 	2635 4593 2634 4593
-Connection ~ 2635 4423
-Connection ~ 2634 4593
 Wire Wire Line
 	11027 5890 11013 6466
 Wire Wire Line
@@ -915,9 +858,7 @@ Wire Wire Line
 Wire Wire Line
 	10367 6020 10367 5987
 Wire Wire Line
-	10666 5889 10666 6467
-Wire Wire Line
-	10666 6465 10666 6465
+	10666 5889 10666 6465
 Connection ~ 10666 6465
 Connection ~ 10368 6326
 Text GLabel 10553 5889 3    60   Input ~ 0
@@ -933,15 +874,9 @@ SPI_INPUT
 Text GLabel 3016 1871 2    60   Input ~ 0
 SPI_OUTPUT
 Wire Wire Line
-	2102 1652 2102 1867
-Wire Wire Line
-	2102 1867 2120 1867
-Wire Wire Line
 	2120 1867 2120 1869
-Connection ~ 2119 1867
-Connection ~ 2102 1653
 $Comp
-L +3.3V #PWR?
+L power:+3.3V #PWR?
 U 1 1 5C6B9617
 P 7290 2940
 F 0 "#PWR?" H 7290 2790 50  0001 C CNN
@@ -951,4 +886,34 @@ F 3 "" H 7290 2940 50  0000 C CNN
 	1    7290 2940
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6036 1081 6036 1116
+Wire Wire Line
+	4281 1021 4341 1021
+Wire Wire Line
+	4516 1031 4536 1031
+Wire Wire Line
+	2026 2909 2204 2909
+Wire Wire Line
+	1694 2909 2026 2909
+Wire Wire Line
+	1694 2909 1694 2910
+Wire Wire Line
+	1518 2909 1694 2909
+Wire Wire Line
+	10666 6465 10666 6467
+Wire Wire Line
+	10199 3777 10296 3777
+Wire Wire Line
+	1372 5212 1707 5212
+Wire Wire Line
+	2069 5214 2391 5214
+Wire Wire Line
+	2102 1652 2102 1867
+Wire Wire Line
+	2102 1867 2120 1867
+Wire Wire Line
+	2204 2909 2370 2909
+Wire Wire Line
+	1851 2907 1851 2911
 $EndSCHEMATC
