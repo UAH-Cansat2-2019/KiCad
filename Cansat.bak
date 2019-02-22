@@ -881,9 +881,9 @@ Wire Wire Line
 Wire Wire Line
 	10199 3777 10296 3777
 Wire Wire Line
-	1372 5212 1707 5212
+	1372 5212 1525 5212
 Wire Wire Line
-	2069 5214 2391 5214
+	2069 5214 2201 5214
 Wire Wire Line
 	2102 1652 2102 1867
 Wire Wire Line
@@ -1381,4 +1381,17 @@ Connection ~ 7983 2013
 Connection ~ 4118 1263
 Connection ~ 2104 1420
 Connection ~ 2103 1866
+Connection ~ 1372 5212
+Connection ~ 1525 5212
+Wire Wire Line
+	1525 5212 1707 5212
+Connection ~ 1883 5214
+Connection ~ 2071 5215
+Connection ~ 2201 5214
+Wire Wire Line
+	2201 5214 2391 5214
+Connection ~ 2390 5215
+Connection ~ 2636 4587
+Connection ~ 1853 2910
+Connection ~ 2370 2909
 $EndSCHEMATC

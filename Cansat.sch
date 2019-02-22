@@ -879,11 +879,7 @@ Wire Wire Line
 Wire Wire Line
 	10666 6465 10666 6467
 Wire Wire Line
-	10199 3777 10296 3777
-Wire Wire Line
-	1372 5212 1525 5212
-Wire Wire Line
-	2069 5214 2201 5214
+	10199 3777 10253 3777
 Wire Wire Line
 	2102 1652 2102 1867
 Wire Wire Line
@@ -959,9 +955,9 @@ Wire Wire Line
 Connection ~ 7983 2153
 Wire Wire Line
 	7983 2153 7983 2151
-Text GLabel 9911 3776 3    50   Input ~ 0
+Text GLabel 9911 3775 3    50   Input ~ 0
 USART_RX_PC2
-Text GLabel 9996 3775 3    50   Output ~ 0
+Text GLabel 9995 3775 3    50   Output ~ 0
 USART_TX_PC3
 Text GLabel 3662 4441 0    60   Input ~ 0
 I2C_CLK_PC1
@@ -1375,23 +1371,11 @@ Wire Wire Line
 Connection ~ 4121 1021
 Wire Wire Line
 	4121 1021 4281 1021
-Connection ~ 4282 1266
-Connection ~ 8451 2156
-Connection ~ 7983 2013
-Connection ~ 4118 1263
-Connection ~ 2104 1420
-Connection ~ 2103 1866
-Connection ~ 1372 5212
-Connection ~ 1525 5212
 Wire Wire Line
-	1525 5212 1707 5212
-Connection ~ 1883 5214
-Connection ~ 2071 5215
-Connection ~ 2201 5214
+	1372 5212 1707 5212
 Wire Wire Line
-	2201 5214 2391 5214
-Connection ~ 2390 5215
-Connection ~ 2636 4587
-Connection ~ 1853 2910
-Connection ~ 2370 2909
+	2069 5214 2391 5214
+Connection ~ 10253 3777
+Wire Wire Line
+	10253 3777 10296 3777
 $EndSCHEMATC
