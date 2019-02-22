@@ -108,10 +108,10 @@ F 3 "" H 8145 1284 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 7752 646  0    60   Input ~ 0
-ADC_Pin0
+ADC_PA0
 Text GLabel 10200 1760 0    60   Input ~ 0
-MCU_MOSFET?Pin
-Text GLabel 7962 2237 0    60   Output ~ 0
+Buzzer_ON_PD0
+Text GLabel 7726 2434 0    60   Output ~ 0
 5V_OUT
 Text GLabel 8725 1069 2    60   Output ~ 0
 3.3V_OUT
@@ -140,11 +140,11 @@ F 3 "" H 2660 3659 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7982 2087 7912 2087
+	7982 2087 7690 2087
 Wire Wire Line
-	7982 2152 7982 2237
+	7770 2283 7770 2284
 Wire Wire Line
-	7982 2237 7962 2237
+	7983 2153 7726 2434
 Wire Wire Line
 	8172 696  8167 651 
 Wire Wire Line
@@ -226,10 +226,10 @@ Wire Wire Line
 Wire Wire Line
 	5881 821  5881 921 
 $Comp
-L Cansat-rescue:Capacitor CAP?
+L Cansat-rescue:Capacitor 4.7uF
 U 1 1 5C66264C
 P 4331 906
-F 0 "CAP?" H 4346 1176 12  0000 C CNN
+F 0 "4.7uF" H 4346 1176 60  0000 C CNN
 F 1 "Capacitor" H 4426 921 60  0000 C CNN
 F 2 "" H 4331 906 60  0001 C CNN
 F 3 "" H 4331 906 60  0001 C CNN
@@ -237,10 +237,10 @@ F 3 "" H 4331 906 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Cansat-rescue:Capacitor CAP?
+L Cansat-rescue:Capacitor 100nF
 U 1 1 5C6639D6
 P 4516 906
-F 0 "CAP?" H 4531 1176 60  0000 C CNN
+F 0 "100nF" H 4617 1171 60  0000 C CNN
 F 1 "Capacitor" H 4426 921 60  0000 C CNN
 F 2 "" H 4516 906 60  0001 C CNN
 F 3 "" H 4516 906 60  0001 C CNN
@@ -248,10 +248,10 @@ F 3 "" H 4516 906 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Cansat-rescue:Resistor RES?
+L Cansat-rescue:Resistor 10K
 U 1 1 5C663E1F
 P 4586 1491
-F 0 "RES?" V 4596 1681 60  0000 C CNN
+F 0 "10K" V 4596 1681 60  0000 C CNN
 F 1 "Resistor" V 4726 1686 60  0000 C CNN
 F 2 "" H 4586 1491 60  0001 C CNN
 F 3 "" H 4586 1491 60  0001 C CNN
@@ -259,10 +259,10 @@ F 3 "" H 4586 1491 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Cansat-rescue:Resistor RES?
+L Cansat-rescue:Resistor 10K
 U 1 1 5C663F58
 P 5886 1476
-F 0 "RES?" V 5846 1656 60  0000 C CNN
+F 0 "10K" V 5846 1656 60  0000 C CNN
 F 1 "Resistor" V 5721 1676 60  0000 C CNN
 F 2 "" H 5886 1476 60  0001 C CNN
 F 3 "" H 5886 1476 60  0001 C CNN
@@ -302,10 +302,10 @@ Wire Wire Line
 Wire Wire Line
 	3986 1256 3984 1254
 $Comp
-L Cansat-rescue:Capacitor CAP?
+L Cansat-rescue:Capacitor 4.7uF
 U 1 1 5C6673BC
 P 4121 1146
-F 0 "CAP?" H 4136 1416 60  0000 C CNN
+F 0 "4.7uF" H 4008 1420 60  0000 C CNN
 F 1 "Capacitor" H 4206 1146 60  0000 C CNN
 F 2 "" H 4121 1146 60  0001 C CNN
 F 3 "" H 4121 1146 60  0001 C CNN
@@ -313,10 +313,10 @@ F 3 "" H 4121 1146 60  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Cansat-rescue:Capacitor CAP?
+L Cansat-rescue:Capacitor 100nF
 U 1 1 5C667441
 P 4281 1146
-F 0 "CAP?" H 4136 1416 60  0000 C CNN
+F 0 "100nF" H 4296 1416 60  0000 C CNN
 F 1 "Capacitor" H 4206 1146 60  0000 C CNN
 F 2 "" H 4281 1146 60  0001 C CNN
 F 3 "" H 4281 1146 60  0001 C CNN
@@ -326,10 +326,10 @@ $EndComp
 Text GLabel 6036 1116 3    60   Output ~ 0
 Vint
 $Comp
-L Cansat-rescue:Resistor RES?
+L Cansat-rescue:Resistor 10k
 U 1 1 5C667FB7
 P 6141 1001
-F 0 "RES?" V 6166 761 60  0000 C CNN
+F 0 "10k" V 6166 761 60  0000 C CNN
 F 1 "Resistor" V 6066 756 60  0000 C CNN
 F 2 "" H 6141 1001 60  0001 C CNN
 F 3 "" H 6141 1001 60  0001 C CNN
@@ -358,9 +358,9 @@ Wire Wire Line
 Wire Wire Line
 	4121 1265 3986 1256
 Text GLabel 5886 1281 0    60   BiDi ~ 0
-I2C_serialdata
+I2C_SD_PC0
 Text GLabel 4576 1306 2    60   Input ~ 0
-I2C_clk
+I2C_CLK_PC1
 Wire Wire Line
 	4581 1186 4576 1306
 $Comp
@@ -614,12 +614,12 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5C69A05C
-P 7912 2087
-F 0 "#PWR?" H 7912 1837 50  0001 C CNN
-F 1 "GND" H 7912 1937 50  0000 C CNN
-F 2 "" H 7912 2087 50  0000 C CNN
-F 3 "" H 7912 2087 50  0000 C CNN
-	1    7912 2087
+P 7690 2087
+F 0 "#PWR?" H 7690 1837 50  0001 C CNN
+F 1 "GND" H 7690 1937 50  0000 C CNN
+F 2 "" H 7690 2087 50  0000 C CNN
+F 3 "" H 7690 2087 50  0000 C CNN
+	1    7690 2087
 	0    1    1    0   
 $EndComp
 $Comp
@@ -636,12 +636,12 @@ $EndComp
 $Comp
 L power:+6V #PWR?
 U 1 1 5C69ABF6
-P 7982 2012
-F 0 "#PWR?" H 7982 1862 50  0001 C CNN
-F 1 "+6V" H 7982 2152 50  0000 C CNN
-F 2 "" H 7982 2012 50  0000 C CNN
-F 3 "" H 7982 2012 50  0000 C CNN
-	1    7982 2012
+P 7562 1994
+F 0 "#PWR?" H 7562 1844 50  0001 C CNN
+F 1 "+6V" H 7562 2134 50  0000 C CNN
+F 2 "" H 7562 1994 50  0000 C CNN
+F 3 "" H 7562 1994 50  0000 C CNN
+	1    7562 1994
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -741,23 +741,23 @@ Connection ~ 1707 5212
 $Comp
 L power:GND #PWR?
 U 1 1 5C6A5131
-P 2103 1867
-F 0 "#PWR?" H 2103 1617 50  0001 C CNN
-F 1 "GND" H 2103 1717 50  0000 C CNN
-F 2 "" H 2103 1867 50  0000 C CNN
-F 3 "" H 2103 1867 50  0000 C CNN
-	1    2103 1867
+P 1765 1868
+F 0 "#PWR?" H 1765 1618 50  0001 C CNN
+F 1 "GND" H 1765 1718 50  0000 C CNN
+F 2 "" H 1765 1868 50  0000 C CNN
+F 3 "" H 1765 1868 50  0000 C CNN
+	1    1765 1868
 	0    1    1    0   
 $EndComp
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5C6A5607
-P 2103 1418
-F 0 "#PWR?" H 2103 1268 50  0001 C CNN
-F 1 "+3.3V" H 2103 1558 50  0000 C CNN
-F 2 "" H 2103 1418 50  0000 C CNN
-F 3 "" H 2103 1418 50  0000 C CNN
-	1    2103 1418
+P 1779 1419
+F 0 "#PWR?" H 1779 1269 50  0001 C CNN
+F 1 "+3.3V" H 1779 1559 50  0000 C CNN
+F 2 "" H 1779 1419 50  0000 C CNN
+F 3 "" H 1779 1419 50  0000 C CNN
+	1    1779 1419
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -794,7 +794,7 @@ F 3 "" H 7293 5661 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 8093 5735 2    60   Input ~ 0
-ADC_Pin1
+ADC_PA1
 $Comp
 L Cansat-rescue:FAN_0 SNAP?
 U 1 1 5C6A83DC
@@ -873,8 +873,6 @@ Text GLabel 3015 1650 2    60   Output ~ 0
 SPI_INPUT
 Text GLabel 3016 1871 2    60   Input ~ 0
 SPI_OUTPUT
-Wire Wire Line
-	2120 1867 2120 1869
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5C6B9617
@@ -911,9 +909,150 @@ Wire Wire Line
 Wire Wire Line
 	2102 1652 2102 1867
 Wire Wire Line
-	2102 1867 2120 1867
+	2102 1867 1766 1869
 Wire Wire Line
 	2204 2909 2370 2909
 Wire Wire Line
 	1851 2907 1851 2911
+$Comp
+L Device:C_Small 100nF
+U 1 1 5C6F9D3E
+P 1778 1640
+F 0 "100nF" H 1470 1694 50  0000 L CNN
+F 1 "C_Small" H 1376 1574 50  0000 L CNN
+F 2 "" H 1778 1640 50  0001 C CNN
+F 3 "~" H 1778 1640 50  0001 C CNN
+	1    1778 1640
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1778 1740 1778 1869
+Wire Wire Line
+	1778 1869 1766 1869
+Wire Wire Line
+	1766 1869 1766 1868
+Connection ~ 1766 1869
+Wire Wire Line
+	1778 1540 1778 1419
+Wire Wire Line
+	1778 1419 1779 1419
+Wire Wire Line
+	2104 1419 2104 1420
+Connection ~ 1779 1419
+Wire Wire Line
+	1779 1419 2104 1419
+$Comp
+L Device:C_Small 1uF
+U 1 1 5C6FE128
+P 7770 1984
+F 0 "1uF" H 7940 1932 50  0000 R CNN
+F 1 "C_Small" H 7843 2054 50  0000 R CNN
+F 2 "" H 7770 1984 50  0001 C CNN
+F 3 "~" H 7770 1984 50  0001 C CNN
+	1    7770 1984
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small 4.7uF
+U 1 1 5C6FE5E0
+P 7770 2184
+F 0 "4.7uF" H 7524 2124 50  0000 L CNN
+F 1 "C_Small" H 7700 2246 50  0000 L CNN
+F 2 "" H 7770 2184 50  0001 C CNN
+F 3 "~" H 7770 2184 50  0001 C CNN
+	1    7770 2184
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7983 2012 7983 1885
+Wire Wire Line
+	7562 1885 7562 1994
+Wire Wire Line
+	7562 1885 7983 1885
+Connection ~ 7770 2284
+Wire Wire Line
+	7770 2284 7821 2331
+Wire Wire Line
+	8451 2157 7983 2157
+Wire Wire Line
+	7983 2157 7983 2153
+Wire Wire Line
+	7983 2151 7985 2151
+Connection ~ 7983 2153
+Wire Wire Line
+	7983 2153 7983 2151
+Connection ~ 7981 2011
+Text GLabel 9911 3776 3    50   Input ~ 0
+USART_RX_PC2
+Text GLabel 9996 3775 3    50   Output ~ 0
+USART_TX_PC3
+Text GLabel 3662 4441 0    60   Input ~ 0
+I2C_CLK_PC1
+Text GLabel 3662 4341 0    60   BiDi ~ 0
+I2C_SD_PC0
+Text GLabel 3962 5141 3    50   Input ~ 0
+USART_RX_PC2
+Text GLabel 4062 5141 3    50   Output ~ 0
+USART_TX_PC3
+Text GLabel 4962 5141 3    50   Input ~ 0
+USART_RX_PD2
+Text GLabel 5262 4441 2    50   Output ~ 0
+USART_TX_PD3
+Text GLabel 6414 6450 2    50   Input ~ 0
+USART_RX_PD2
+Text GLabel 6416 6296 2    50   Output ~ 0
+USART_TX_PD3
+Text GLabel 4762 5141 3    50   Output ~ 0
+Buzzer_ON_PD0
+Text GLabel 5262 3941 2    50   Output ~ 0
+LED_ON_PE0
+Text GLabel 4262 2541 1    60   Input ~ 0
+ADC_PA1
+Text GLabel 4362 2541 1    60   Input ~ 0
+ADC_PA0
+Text GLabel 1088 4347 0    50   Output ~ 0
+USART_TX_PD7
+Text GLabel 1083 4519 0    50   Input ~ 0
+USART_RX_PD6
+Text GLabel 5262 4141 2    50   Input ~ 0
+USART_RX_PD6
+Text GLabel 5262 4041 2    50   Output ~ 0
+USART_TX_PD7
+$Comp
+L power:VBUS #PWR?
+U 1 1 5C7191DB
+P 9172 5394
+F 0 "#PWR?" H 9172 5244 50  0001 C CNN
+F 1 "VBUS" V 9187 5521 50  0000 L CNN
+F 2 "" H 9172 5394 50  0001 C CNN
+F 3 "" H 9172 5394 50  0001 C CNN
+	1    9172 5394
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:XLR3_Switched J?
+U 1 1 5C7196DF
+P 9472 5394
+F 0 "J?" H 9472 5759 50  0000 C CNN
+F 1 "XLR3_Switched" H 9472 5668 50  0000 C CNN
+F 2 "" H 9472 5494 50  0001 C CNN
+F 3 " ~" H 9472 5494 50  0001 C CNN
+	1    9472 5394
+	1    0    0    -1  
+$EndComp
+Text GLabel 9772 5394 3    50   Output ~ 0
+6V_OUT
+Text GLabel 8853 5528 0    50   Output ~ 0
+3V_OUT
+$Comp
+L Device:D_Small_ALT D?
+U 1 1 5C71BBB3
+P 8853 5628
+F 0 "D?" V 8807 5696 50  0000 L CNN
+F 1 "D_Small_ALT" V 8898 5696 50  0000 L CNN
+F 2 "" V 8853 5628 50  0001 C CNN
+F 3 "~" V 8853 5628 50  0001 C CNN
+	1    8853 5628
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
