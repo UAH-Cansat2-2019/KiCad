@@ -29,8 +29,8 @@ $Comp
 L Cansat-rescue:BNO055 IC?
 U 1 1 5C58FCE6
 P 6790 3640
-F 0 "IC?" H 8340 4340 50  0000 L CNN
-F 1 "BNO055" H 8340 4240 50  0000 L CNN
+F 0 "IC?" H 7830 3644 50  0000 L CNN
+F 1 "BNO055" H 7734 3716 50  0000 L CNN
 F 2 "BNO055" H 8340 4140 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/BNO055.pdf" H 8340 4040 50  0001 L CNN
 F 4 "IMUs - Inertial Measurement Units Absolute Orientation 9-Axis Sensor" H 8340 3940 50  0001 L CNN "Description"
@@ -111,7 +111,7 @@ Text GLabel 7752 646  0    60   Input ~ 0
 ADC_PA0
 Text GLabel 10200 1760 0    60   Input ~ 0
 Buzzer_ON_PD0
-Text GLabel 7726 2434 0    60   Output ~ 0
+Text GLabel 7786 2369 0    60   Output ~ 0
 5V_OUT
 Text GLabel 8725 1069 2    60   Output ~ 0
 3.3V_OUT
@@ -144,7 +144,7 @@ Wire Wire Line
 Wire Wire Line
 	7770 2283 7770 2284
 Wire Wire Line
-	7983 2153 7726 2434
+	7983 2153 7786 2369
 Wire Wire Line
 	8172 696  8167 651 
 Wire Wire Line
@@ -208,7 +208,7 @@ F 8 "SFH 7776" H 5071 -159 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4511 786  4681 786 
+	4511 786  4516 786 
 Wire Wire Line
 	4511 786  4341 781 
 Wire Wire Line
@@ -220,7 +220,7 @@ Wire Wire Line
 Wire Wire Line
 	4341 1021 4331 1031
 Wire Wire Line
-	4116 1021 4281 1021
+	4116 1021 4121 1021
 Wire Wire Line
 	4116 1021 3827 1031
 Wire Wire Line
@@ -881,9 +881,9 @@ Wire Wire Line
 Wire Wire Line
 	10199 3777 10296 3777
 Wire Wire Line
-	1372 5212 1707 5212
+	1372 5212 1525 5212
 Wire Wire Line
-	2069 5214 2391 5214
+	2069 5214 2201 5214
 Wire Wire Line
 	2102 1652 2102 1867
 Wire Wire Line
@@ -1202,24 +1202,24 @@ $EndComp
 $Comp
 L Cansat-rescue:Resistor 10K?
 U 1 1 5C719EFE
-P 8806 3372
-F 0 "10K?" V 8766 3552 60  0000 C CNN
-F 1 "Resistor" V 8641 3572 60  0000 C CNN
-F 2 "" H 8806 3372 60  0001 C CNN
-F 3 "" H 8806 3372 60  0001 C CNN
-	1    8806 3372
+P 8469 3353
+F 0 "10K?" H 8465 3485 60  0000 C CNN
+F 1 "Resistor" H 8483 3275 60  0000 C CNN
+F 2 "" H 8469 3353 60  0001 C CNN
+F 3 "" H 8469 3353 60  0001 C CNN
+	1    8469 3353
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Cansat-rescue:Resistor 10K?
 U 1 1 5C719FFC
-P 8598 2612
-F 0 "10K?" V 8558 2792 60  0000 C CNN
-F 1 "Resistor" V 8433 2812 60  0000 C CNN
-F 2 "" H 8598 2612 60  0001 C CNN
-F 3 "" H 8598 2612 60  0001 C CNN
-	1    8598 2612
-	0    -1   -1   0   
+P 8364 2942
+F 0 "10K?" H 8376 3040 60  0000 C CNN
+F 1 "Resistor" H 8376 2878 60  0000 C CNN
+F 2 "" H 8364 2942 60  0001 C CNN
+F 3 "" H 8364 2942 60  0001 C CNN
+	1    8364 2942
+	1    0    0    -1  
 $EndComp
 $Comp
 L Cansat-rescue:Resistor 10K?
@@ -1233,15 +1233,15 @@ F 3 "" H 6684 3820 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Cansat-rescue:Resistor 10K?
+L Cansat-rescue:Resistor 10K?opt
 U 1 1 5C71A18D
-P 6614 4396
-F 0 "10K?" V 6574 4576 60  0000 C CNN
-F 1 "Resistor" V 6449 4596 60  0000 C CNN
-F 2 "" H 6614 4396 60  0001 C CNN
-F 3 "" H 6614 4396 60  0001 C CNN
-	1    6614 4396
-	0    -1   -1   0   
+P 7873 4807
+F 0 "10K?opt" H 7910 4709 60  0000 C CNN
+F 1 "Resistor" H 7952 4622 60  0000 C CNN
+F 2 "" H 7873 4807 60  0001 C CNN
+F 3 "" H 7873 4807 60  0001 C CNN
+	1    7873 4807
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	7228 2588 7230 2794
@@ -1301,4 +1301,97 @@ Wire Wire Line
 Connection ~ 6684 3740
 Wire Wire Line
 	6684 3740 6590 3740
+Text GLabel 6651 4071 0    50   Input ~ 0
+nBootLoadPin
+Wire Wire Line
+	6791 3840 6790 3840
+Wire Wire Line
+	6733 3840 6733 3901
+Wire Wire Line
+	6733 3901 6667 3901
+Wire Wire Line
+	6667 3901 6667 4071
+Wire Wire Line
+	6667 4071 6651 4071
+Connection ~ 6790 3840
+Wire Wire Line
+	6790 3840 6733 3840
+Wire Wire Line
+	8469 3433 8469 3637
+Wire Wire Line
+	8284 2942 8089 2942
+Wire Wire Line
+	8089 2942 8089 2944
+Wire Wire Line
+	8089 2944 8091 2944
+Wire Wire Line
+	8445 2943 8469 2942
+Wire Wire Line
+	8469 2942 8469 3273
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5C723A8F
+P 8470 3092
+F 0 "#PWR?" H 8470 2942 50  0001 C CNN
+F 1 "+3.3V" V 8485 3220 50  0000 L CNN
+F 2 "" H 8470 3092 50  0001 C CNN
+F 3 "" H 8470 3092 50  0001 C CNN
+	1    8470 3092
+	0    1    1    0   
+$EndComp
+Text GLabel 7698 4836 3    50   Input ~ 0
+nResetPin
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5C72899A
+P 8148 4806
+F 0 "#PWR?" H 8148 4656 50  0001 C CNN
+F 1 "+3.3V" V 8163 4934 50  0000 L CNN
+F 2 "" H 8148 4806 50  0001 C CNN
+F 3 "" H 8148 4806 50  0001 C CNN
+	1    8148 4806
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7690 4640 7690 4837
+Wire Wire Line
+	7793 4837 7793 4808
+Wire Wire Line
+	7792 4807 7793 4807
+Wire Wire Line
+	8149 4807 8149 4806
+Connection ~ 8149 4807
+Wire Wire Line
+	8149 4807 8150 4807
+Wire Wire Line
+	7690 4837 7793 4837
+Wire Wire Line
+	7954 4807 8149 4807
+Wire Wire Line
+	7821 2330 7821 2331
+Connection ~ 4516 786 
+Wire Wire Line
+	4516 786  4681 786 
+Connection ~ 4121 1021
+Wire Wire Line
+	4121 1021 4281 1021
+Connection ~ 4282 1266
+Connection ~ 8451 2156
+Connection ~ 7983 2013
+Connection ~ 4118 1263
+Connection ~ 2104 1420
+Connection ~ 2103 1866
+Connection ~ 1372 5212
+Connection ~ 1525 5212
+Wire Wire Line
+	1525 5212 1707 5212
+Connection ~ 1883 5214
+Connection ~ 2071 5215
+Connection ~ 2201 5214
+Wire Wire Line
+	2201 5214 2391 5214
+Connection ~ 2390 5215
+Connection ~ 2636 4587
+Connection ~ 1853 2910
+Connection ~ 2370 2909
 $EndSCHEMATC
