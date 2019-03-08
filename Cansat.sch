@@ -738,11 +738,11 @@ Text GLabel 3650 4500 3    50   Output ~ 0
 USART_TX_PC3
 Text GLabel 4550 4500 3    50   Input ~ 0
 USART_RX_PD2
-Text GLabel 5150 3100 2    50   Output ~ 0
+Text GLabel 4950 3100 2    50   Output ~ 0
 USART_TX_PD3
-Text GLabel 1600 6550 0    50   Input ~ 0
+Text GLabel 2100 6350 0    50   Input ~ 0
 USART_RX_PD2
-Text GLabel 1600 6450 0    50   Output ~ 0
+Text GLabel 2100 6450 0    50   Output ~ 0
 USART_TX_PD3
 Text GLabel 4350 4500 3    50   Output ~ 0
 Buzzer_ON_PD0
@@ -1140,28 +1140,6 @@ F 3 "" H 2100 7150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C?
-U 1 1 5C88E6E0
-P 1800 6700
-F 0 "C?" H 1915 6746 50  0000 L CNN
-F 1 "uF0.1" H 1915 6655 50  0000 L CNN
-F 2 "" H 1838 6550 50  0001 C CNN
-F 3 "~" H 1800 6700 50  0001 C CNN
-	1    1800 6700
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C88E78A
-P 1800 6850
-F 0 "#PWR?" H 1800 6600 50  0001 C CNN
-F 1 "GND" H 1805 6677 50  0000 C CNN
-F 2 "" H 1800 6850 50  0001 C CNN
-F 3 "" H 1800 6850 50  0001 C CNN
-	1    1800 6850
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R?
 U 1 1 5C893CEA
 P 7700 6000
@@ -1247,33 +1225,6 @@ $EndComp
 Connection ~ 10650 6100
 Wire Wire Line
 	10650 6100 10800 6100
-Wire Wire Line
-	4950 3100 5050 3100
-$Comp
-L Device:C C?
-U 1 1 5C920859
-P 5050 2950
-F 0 "C?" H 4900 3050 50  0000 L CNN
-F 1 "0.1uF" H 5200 2950 50  0000 L CNN
-F 2 "" H 5088 2800 50  0001 C CNN
-F 3 "~" H 5050 2950 50  0001 C CNN
-	1    5050 2950
-	1    0    0    -1  
-$EndComp
-Connection ~ 5050 3100
-Wire Wire Line
-	5050 3100 5150 3100
-$Comp
-L power:GND #PWR?
-U 1 1 5C920AC7
-P 5050 2800
-F 0 "#PWR?" H 5050 2550 50  0001 C CNN
-F 1 "GND" H 5050 2650 50  0000 C CNN
-F 2 "" H 5050 2800 50  0000 C CNN
-F 3 "" H 5050 2800 50  0000 C CNN
-	1    5050 2800
-	-1   0    0    1   
-$EndComp
 $Comp
 L Cansat-rescue:XBP9B-XCWT-001 IC?
 U 1 1 5C875B9F
@@ -1289,69 +1240,6 @@ F 7 "Digi International" H 3665 5370 50  0001 L CNN "Manufacturer_Name"
 F 8 "XBP9B-XCWT-001" H 3640 5280 50  0001 L CNN "Manufacturer_Part_Number"
 	1    3900 7000
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5C92CB12
-P 2050 6100
-F 0 "C?" H 1800 6200 50  0000 L CNN
-F 1 "uF0.1" H 1750 6100 50  0000 L CNN
-F 2 "" H 2088 5950 50  0001 C CNN
-F 3 "~" H 2050 6100 50  0001 C CNN
-	1    2050 6100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C92CCCE
-P 2050 5950
-F 0 "#PWR?" H 2050 5700 50  0001 C CNN
-F 1 "GND" H 2055 5777 50  0000 C CNN
-F 2 "" H 2050 5950 50  0001 C CNN
-F 3 "" H 2050 5950 50  0001 C CNN
-	1    2050 5950
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1600 6550 1800 6550
-Wire Wire Line
-	1950 6550 1950 6350
-Wire Wire Line
-	1950 6350 2100 6350
-Wire Wire Line
-	1950 6250 2050 6250
-Connection ~ 1800 6550
-Wire Wire Line
-	1800 6550 1950 6550
-Connection ~ 2050 6250
-Wire Wire Line
-	2050 6250 2100 6250
-Wire Wire Line
-	1600 6450 1650 6450
-$Comp
-L Device:C C?
-U 1 1 5C93B75B
-P 1650 6300
-F 0 "C?" H 1400 6400 50  0000 L CNN
-F 1 "uF0.1" H 1350 6300 50  0000 L CNN
-F 2 "" H 1688 6150 50  0001 C CNN
-F 3 "~" H 1650 6300 50  0001 C CNN
-	1    1650 6300
-	1    0    0    -1  
-$EndComp
-Connection ~ 1650 6450
-Wire Wire Line
-	1650 6450 2100 6450
-$Comp
-L power:GND #PWR?
-U 1 1 5C93B7D1
-P 1650 6150
-F 0 "#PWR?" H 1650 5900 50  0001 C CNN
-F 1 "GND" H 1655 5977 50  0000 C CNN
-F 2 "" H 1650 6150 50  0001 C CNN
-F 3 "" H 1650 6150 50  0001 C CNN
-	1    1650 6150
-	-1   0    0    1   
 $EndComp
 $Comp
 L Device:CP1 C?
@@ -1567,35 +1455,10 @@ F 3 "" H 10000 5600 50  0001 C CNN
 	1    10000 5600
 	-1   0    0    1   
 $EndComp
-Text GLabel 10100 6150 3    50   Input ~ 0
+Text GLabel 10100 5600 3    50   Input ~ 0
 TCE0
-Wire Wire Line
-	10100 5600 10100 6000
-$Comp
-L Device:C_Small 100nF?
-U 1 1 5CA380E7
-P 10000 6000
-F 0 "100nF?" V 9771 6000 50  0000 C CNN
-F 1 "C_Small" V 9862 6000 50  0000 C CNN
-F 2 "" H 10000 6000 50  0001 C CNN
-F 3 "~" H 10000 6000 50  0001 C CNN
-	1    10000 6000
-	0    -1   -1   0   
-$EndComp
-Connection ~ 10100 6000
-Wire Wire Line
-	10100 6000 10100 6150
-$Comp
-L power:GND #PWR?
-U 1 1 5CA381BE
-P 9900 6000
-F 0 "#PWR?" H 9900 5750 50  0001 C CNN
-F 1 "GND" H 9905 5827 50  0000 C CNN
-F 2 "" H 9900 6000 50  0001 C CNN
-F 3 "" H 9900 6000 50  0001 C CNN
-	1    9900 6000
-	0    1    1    0   
-$EndComp
 Text GLabel 4950 3600 2    50   Input ~ 0
 TCE0
+Wire Wire Line
+	1950 6250 2100 6250
 $EndSCHEMATC
