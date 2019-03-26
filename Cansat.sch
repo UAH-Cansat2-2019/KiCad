@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -53,17 +53,6 @@ F 3 "" H 2267 1693 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Cansat-rescue:NTC-LE203 Temp-R?
-U 1 1 5C5901BF
-P 7902 746
-F 0 "Temp-R?" H 7892 616 60  0000 C CNN
-F 1 "NTC-LE203" H 7672 876 60  0000 L BNN
-F 2 "" H 7672 876 60  0001 C CNN
-F 3 "" H 7672 876 60  0001 C CNN
-	1    7902 746 
-	1    0    0    -1  
-$EndComp
-$Comp
 L Cansat-rescue:SPKR105dB MAS803Q?
 U 1 1 5C591308
 P 9900 1550
@@ -96,7 +85,7 @@ F 3 "" H 7845 1334 60  0001 C CNN
 	1    7870 1374
 	1    0    0    -1  
 $EndComp
-Text GLabel 7452 696  0    60   Input ~ 0
+Text GLabel 8050 700  3    60   Input ~ 0
 ADC_PA0
 Text GLabel 9900 1810 0    60   Input ~ 0
 Buzzer_ON_PD0
@@ -134,16 +123,6 @@ Wire Wire Line
 	7470 2333 7470 2334
 Wire Wire Line
 	7683 2203 7486 2419
-Wire Wire Line
-	7872 746  7867 701 
-Wire Wire Line
-	7867 701  7452 701 
-Wire Wire Line
-	7452 701  7452 696 
-Wire Wire Line
-	7942 746  8037 806 
-Wire Wire Line
-	8037 806  8442 806 
 Wire Wire Line
 	6490 3790 6384 3790
 $Comp
@@ -334,29 +313,18 @@ Text GLabel 4276 1356 2    60   Input ~ 0
 I2C_CLK_PC1
 Wire Wire Line
 	4281 1236 4276 1356
-$Comp
-L Cansat-rescue:OpenLog Breakout?
-U 1 1 5C6880DE
-P 9760 3485
-F 0 "Breakout?" H 9754 3669 60  0000 C CNN
-F 1 "OpenLog" H 9754 3763 60  0000 C CNN
-F 2 "" H 9760 3485 60  0001 C CNN
-F 3 "" H 9760 3485 60  0001 C CNN
-	1    9760 3485
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3821 1358 3982 1317
 $Comp
 L power:GND #PWR?
 U 1 1 5C68FB40
-P 8442 806
-F 0 "#PWR?" H 8442 556 50  0001 C CNN
-F 1 "GND" H 8442 656 50  0000 C CNN
-F 2 "" H 8442 806 50  0000 C CNN
-F 3 "" H 8442 806 50  0000 C CNN
-	1    8442 806 
-	1    0    0    -1  
+P 8450 700
+F 0 "#PWR?" H 8450 450 50  0001 C CNN
+F 1 "GND" H 8450 550 50  0000 C CNN
+F 2 "" H 8450 700 50  0000 C CNN
+F 3 "" H 8450 700 50  0000 C CNN
+	1    8450 700 
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR?
@@ -380,21 +348,6 @@ F 3 "" H 9900 1290 50  0000 C CNN
 	1    9900 1290
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C695169
-P 9953 3827
-F 0 "#PWR?" H 9953 3577 50  0001 C CNN
-F 1 "GND" H 9953 3677 50  0000 C CNN
-F 2 "" H 9953 3827 50  0000 C CNN
-F 3 "" H 9953 3827 50  0000 C CNN
-	1    9953 3827
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9996 3827 9996 3825
-Wire Wire Line
-	9996 3825 9995 3825
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5C695753
@@ -620,7 +573,7 @@ Text GLabel 2712 1458 2    60   Output ~ 0
 SPI_CLK
 Text GLabel 2715 1700 2    60   Output ~ 0
 SPI_INPUT
-Text GLabel 2716 1921 2    60   Input ~ 0
+Text GLabel 2717 1921 2    60   Input ~ 0
 SPI_OUTPUT
 $Comp
 L power:+3.3V #PWR?
@@ -647,8 +600,6 @@ Wire Wire Line
 	1394 2959 1394 2960
 Wire Wire Line
 	1218 2959 1394 2959
-Wire Wire Line
-	9899 3827 9953 3827
 Wire Wire Line
 	1802 1702 1802 1917
 Wire Wire Line
@@ -748,7 +699,7 @@ Text GLabel 4350 4500 3    50   Output ~ 0
 Buzzer_ON_PD0
 Text GLabel 3900 2750 1    60   Input ~ 0
 ADC_PA1
-Text GLabel 4000 2750 1    60   Input ~ 0
+Text GLabel 3850 2700 1    60   Input ~ 0
 ADC_PA0
 Text GLabel 788  4397 0    50   Output ~ 0
 USART_TX_PD7
@@ -1107,9 +1058,6 @@ Wire Wire Line
 	1072 5262 1407 5262
 Wire Wire Line
 	1769 5264 2091 5264
-Connection ~ 9953 3827
-Wire Wire Line
-	9953 3827 9996 3827
 Connection ~ 6490 3890
 Wire Wire Line
 	6490 3890 6433 3890
@@ -1344,7 +1292,7 @@ Wire Wire Line
 Wire Wire Line
 	6450 7000 6450 6850
 Connection ~ 6450 6850
-Text GLabel 4100 2750 1    50   Input ~ 0
+Text GLabel 3950 2700 1    50   Input ~ 0
 MCUAVCC
 $Comp
 L power:GND #PWR?
@@ -1366,62 +1314,62 @@ MCUVCC
 $Comp
 L Connector_Generic:Conn_02x03_Top_Bottom J?
 U 1 1 5C9DB5A1
-P 4650 2100
-F 0 "J?" H 4700 2417 50  0000 C CNN
-F 1 "PDI" H 4700 2326 50  0000 C CNN
-F 2 "" H 4650 2100 50  0001 C CNN
-F 3 "~" H 4650 2100 50  0001 C CNN
-	1    4650 2100
+P 4500 2050
+F 0 "J?" H 4550 2367 50  0000 C CNN
+F 1 "PDI" H 4550 2276 50  0000 C CNN
+F 2 "" H 4500 2050 50  0001 C CNN
+F 3 "~" H 4500 2050 50  0001 C CNN
+	1    4500 2050
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5C9DB7DC
-P 4950 2200
-F 0 "#PWR?" H 4950 1950 50  0001 C CNN
-F 1 "GND" H 4950 2050 50  0000 C CNN
-F 2 "" H 4950 2200 50  0000 C CNN
-F 3 "" H 4950 2200 50  0000 C CNN
-	1    4950 2200
+P 4800 2150
+F 0 "#PWR?" H 4800 1900 50  0001 C CNN
+F 1 "GND" H 4800 2000 50  0000 C CNN
+F 2 "" H 4800 2150 50  0000 C CNN
+F 3 "" H 4800 2150 50  0000 C CNN
+	1    4800 2150
 	1    0    0    -1  
 $EndComp
-NoConn ~ 4950 2100
-NoConn ~ 4450 2100
+NoConn ~ 4800 2050
+NoConn ~ 4300 2050
 Wire Wire Line
-	4450 2200 4400 2200
+	4300 2150 4250 2150
 Wire Wire Line
-	4400 2200 4400 2450
+	4250 2150 4250 2400
 Wire Wire Line
-	4450 2000 4350 2000
+	4300 1950 4200 1950
 Wire Wire Line
-	4350 2000 4350 2500
+	4200 1950 4200 2450
 Wire Wire Line
-	4350 2500 4500 2500
+	4200 2450 4350 2450
 Wire Wire Line
-	4500 2500 4500 2750
+	4350 2450 4350 2700
 $Comp
 L Device:R R?
 U 1 1 5CA09F7E
-P 4950 2450
-F 0 "R?" V 5050 2350 50  0000 C CNN
-F 1 "10kohm" V 5050 2550 50  0000 C CNN
-F 2 "" V 4880 2450 50  0001 C CNN
-F 3 "~" H 4950 2450 50  0001 C CNN
-	1    4950 2450
+P 4800 2400
+F 0 "R?" V 4900 2300 50  0000 C CNN
+F 1 "10kohm" V 4900 2500 50  0000 C CNN
+F 2 "" V 4730 2400 50  0001 C CNN
+F 3 "~" H 4800 2400 50  0001 C CNN
+	1    4800 2400
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4850 2450 4800 2450
-Connection ~ 4400 2450
+	4700 2400 4650 2400
+Connection ~ 4250 2400
 Wire Wire Line
-	4400 2450 4400 2750
-Connection ~ 4800 2450
+	4250 2400 4250 2700
+Connection ~ 4650 2400
 Wire Wire Line
-	4800 2450 4400 2450
+	4650 2400 4250 2400
 Wire Wire Line
-	5100 2450 5100 2000
+	4950 2400 4950 1950
 Wire Wire Line
-	5100 2000 4950 2000
+	4950 1950 4800 1950
 $Comp
 L Cansat-rescue:Servo S?
 U 1 1 5CA31295
@@ -1461,4 +1409,134 @@ Text GLabel 4950 3600 2    50   Input ~ 0
 TCE0
 Wire Wire Line
 	1950 6250 2100 6250
+Text Notes 850  2100 0    50   ~ 0
+remember to connect in pcb\n
+Text Notes 5050 5250 0    50   ~ 0
+any pin\n
+Text Notes 6250 5200 0    50   ~ 0
+any pin\n
+$Comp
+L Device:Thermistor_NTC TH?
+U 1 1 5C8485A9
+P 7850 700
+F 0 "TH?" V 7560 700 50  0000 C CNN
+F 1 "Thermistor_NTC" V 7651 700 50  0000 C CNN
+F 2 "" H 7850 750 50  0001 C CNN
+F 3 "~" H 7850 750 50  0001 C CNN
+	1    7850 700 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C84E011
+P 8300 700
+F 0 "R?" V 8093 700 50  0000 C CNN
+F 1 "R" V 8184 700 50  0000 C CNN
+F 2 "" V 8230 700 50  0001 C CNN
+F 3 "~" H 8300 700 50  0001 C CNN
+	1    8300 700 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8000 700  8150 700 
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5C859782
+P 7700 700
+F 0 "#PWR?" H 7700 550 50  0001 C CNN
+F 1 "+3.3V" V 7715 828 50  0000 L CNN
+F 2 "" H 7700 700 50  0001 C CNN
+F 3 "" H 7700 700 50  0001 C CNN
+	1    7700 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 camera?
+U 1 1 5C859D17
+P 10700 3550
+F 0 "camera?" V 10573 3630 50  0000 L CNN
+F 1 "camera" V 10664 3630 50  0000 L CNN
+F 2 "" H 10700 3550 50  0001 C CNN
+F 3 "~" H 10700 3550 50  0001 C CNN
+	1    10700 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C859F42
+P 10600 3350
+F 0 "#PWR?" H 10600 3100 50  0001 C CNN
+F 1 "GND" H 10605 3177 50  0000 C CNN
+F 2 "" H 10600 3350 50  0001 C CNN
+F 3 "" H 10600 3350 50  0001 C CNN
+	1    10600 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C85A0CC
+P 10700 3100
+F 0 "#PWR?" H 10700 2950 50  0001 C CNN
+F 1 "+5V" H 10715 3273 50  0000 C CNN
+F 2 "" H 10700 3100 50  0001 C CNN
+F 3 "" H 10700 3100 50  0001 C CNN
+	1    10700 3100
+	1    0    0    -1  
+$EndComp
+Text Notes 1100 5600 0    50   ~ 0
+NOTE: Have connections like this\noff the pins so that you can tell if they\nare or are not connected. They currently\nare not.
+Wire Wire Line
+	9996 3825 9995 3825
+Wire Wire Line
+	9996 3827 9996 3825
+Wire Wire Line
+	9953 3827 9996 3827
+Wire Wire Line
+	9899 3827 9953 3827
+Connection ~ 9953 3827
+$Comp
+L power:GND #PWR?
+U 1 1 5C695169
+P 9953 3827
+F 0 "#PWR?" H 9953 3577 50  0001 C CNN
+F 1 "GND" H 9953 3677 50  0000 C CNN
+F 2 "" H 9953 3827 50  0000 C CNN
+F 3 "" H 9953 3827 50  0000 C CNN
+	1    9953 3827
+	1    0    0    -1  
+$EndComp
+$Comp
+L Cansat-rescue:OpenLog Breakout?
+U 1 1 5C6880DE
+P 9760 3485
+F 0 "Breakout?" H 9754 3669 60  0000 C CNN
+F 1 "OpenLog" H 9754 3763 60  0000 C CNN
+F 2 "" H 9760 3485 60  0001 C CNN
+F 3 "" H 9760 3485 60  0001 C CNN
+	1    9760 3485
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C838BAD
+P 10700 3250
+F 0 "R?" H 10770 3296 50  0000 L CNN
+F 1 "R" H 10770 3205 50  0000 L CNN
+F 2 "" V 10630 3250 50  0001 C CNN
+F 3 "~" H 10700 3250 50  0001 C CNN
+	1    10700 3250
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 1500 5800 2950 1750
+U 5C83FF72
+F0 "xbee" 50
+F1 "xbee.sch" 50
+$EndSheet
+$Sheet
+S 4050 1700 1050 900 
+U 5C839BD0
+F0 "debug" 50
+F1 "debug.sch" 50
+$EndSheet
 $EndSCHEMATC
